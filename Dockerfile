@@ -9,7 +9,7 @@ RUN yarn install
 
 COPY . .
 
-ENV HOST 0.0.0.0
+ENV HOST localhost
 EXPOSE 3000
 
 CMD [ "yarn", "dev" ]
