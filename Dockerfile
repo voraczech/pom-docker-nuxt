@@ -1,11 +1,11 @@
-FROM node:16
+FROM node:16.14
 
 WORKDIR /dockerapp
 
 COPY package.json .
 COPY yarn.lock .
 
-RUN yarn
+RUN yarn install
 
 COPY . .
 
